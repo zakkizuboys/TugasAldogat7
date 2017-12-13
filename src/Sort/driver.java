@@ -16,8 +16,13 @@ public class driver {
     public static void main(String[] args) {
         Sorting sr = new Sorting();
         Scanner sc = new Scanner(System.in);
-        int[] array = null, array_input, loads = {20};
-        int z,k;
+        int z,k,n;
+        int[] array = null, array_input;
+        
+        System.out.println("Masukkan banyak data : ");
+        n = sc.nextInt();
+        int[] loads = {n};
+        
         for (int i = 0; i < loads.length; i++) {
             array_input = sr.randomArray(loads[i]);
             array = new int[loads[i]];
